@@ -1,0 +1,75 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 70px;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #1f1f1f;
+}
+
+.home-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: white;
+
+  /* Changed background from gradient to image */
+  background-image: url('background.jpg'); /* replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* Optional overlay to make text readable */
+.home-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* adjust opacity if needed */
+  z-index: 1;
+}
+
+.home-section > .container {
+  position: relative;
+  z-index: 2;
+}
+
+.home-section span {
+  color: #ffd700;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.project-card {
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.footer {
+  background: #1f1f1f;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+}  
+
